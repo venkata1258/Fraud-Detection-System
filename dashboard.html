@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybercrime Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h2>Cybercrime Team Dashboard</h2>
+
+        <!-- Fraud Cases Table -->
+        <h3>Reported Fraud Cases</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Evidence</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="fraudReports">
+                <!-- Fraud reports will be added dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Call/SMS/Email Logs -->
+        <h3>Call/SMS/Email Logs</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Type</th>
+                    <th>Message/Call Content</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody id="logs">
+                <!-- Logs will be added dynamically -->
+            </tbody>
+        </table>
+
+        <!-- Location Tracking -->
+        <h3>Scammer Location Tracking</h3>
+        <div id="map" style="width: 100%; height: 400px;"></div>
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"></script>
+    <script src="script.js"></script>
+</body>
+</html>

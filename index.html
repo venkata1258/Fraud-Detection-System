@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fraud Detection System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>AI Fraud Detection System</h1>
+    </header>
+
+    <!-- Fraud Report Form -->
+    <section class="report-section">
+        <h2>Report a Fraud Case</h2>
+        <form id="fraudReportForm">
+            <label for="fraudType">Fraud Type:</label>
+            <select id="fraudType" required>
+                <option value="call">Fraud Call</option>
+                <option value="sms">Fraud SMS</option>
+                <option value="email">Phishing Email</option>
+                <option value="transaction">Suspicious Transaction</option>
+            </select>
+
+            <label for="details">Details:</label>
+            <textarea id="details" placeholder="Enter details about the fraud..." required></textarea>
+
+            <!-- File Upload for Evidence -->
+            <label for="evidence">Upload Evidence:</label>
+            <input type="file" id="evidence">
+
+            <button type="submit">Submit Report</button>
+        </form>
+    </section>
+
+    <!-- Real-time Fraud Alerts -->
+    <section class="alerts-section">
+        <h2>Live Fraud Alerts</h2>
+        <div id="fraudAlerts">
+            <!-- Alerts will be displayed here -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
